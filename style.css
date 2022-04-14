@@ -1,0 +1,56 @@
+*{
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    display: grid;
+    grid-template: 20vh 20vh 1fr / 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+.header{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 7rem;
+    grid-row: 1;
+    grid-column: 2/4;
+    background-color: bisque;
+    justify-self: center;
+    margin-top: 10px
+}
+
+.searchBar{
+    grid-row: 2;
+    grid-column: 2/4;
+    background-color: aqua;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.bookList{
+    grid-row: 3;
+    grid-column: 1 / span 4;
+    background-color: blueviolet;
+}
+
+.form{
+    display: none;
+    width: 33vw;
+    position: fixed;
+    top: 30vh;
+    left: 33vw;
+    background-color: white;
+    padding: 20px;
+    border: 5px groove black;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+th{
+    width: 25vw;
+}
