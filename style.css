@@ -27,6 +27,38 @@ body{
     max-width: 100%;
     display: flex;
     justify-content: space-around;
+    align-content: center;
+}
+
+.searchIcon{
+    max-width: 50px;
+    max-height: 50px;
+    transition: all .2s ease-in-out;
+}
+
+.searchIcon:hover{
+    transform: scale(1.2);
+}
+
+.addBook{
+    -webkit-appearance: none;
+    appearance: none;
+    display: flex;
+    justify-content: center;
+    background-color: cornflowerblue;
+    border: none;
+    border-radius: 10px;
+    height: 50px;
+    width: 50px;
+    font-size: 3rem;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    transition: all .2s ease-in-out;
+}
+
+.addBook:hover{
+    transform: scale(1.1);
 }
 
 .bookList{
@@ -44,6 +76,12 @@ body{
     background-color: white;
     padding: 20px;
     border: 5px groove black;
+}
+
+.close{
+    position: absolute;
+    right: 5px;
+    top: 5px;
 }
 
 form{
